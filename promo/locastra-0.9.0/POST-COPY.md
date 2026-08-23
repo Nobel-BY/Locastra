@@ -14,9 +14,9 @@ Locastra 是一个面向 Windows 10/11 x64 的开源本地 AI 工作台，目标
 
 聊天与设置默认保存在本机，推理服务只监听 `127.0.0.1`。安装包目前未做商业代码签名，Windows SmartScreen 可能显示“未知发布者”，请从 GitHub Release 下载并核对 SHA-256。
 
-项目地址：发布后填写 GitHub 仓库链接
+项目地址：https://github.com/Nobel-BY/Locastra
 
-下载地址：发布后填写 v0.9.0 Release 链接
+下载地址：https://github.com/Nobel-BY/Locastra/releases/tag/v0.9.0
 
 #本地AI #大语言模型 #开源软件 #Windows #GGUF #llamacpp #Locastra
 

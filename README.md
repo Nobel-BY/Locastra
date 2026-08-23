@@ -6,7 +6,7 @@ Locastra 是面向 Windows 的本地 AI 工作台。内部工程标识继续使�
 
 ## 下载
 
-普通用户请前往 GitHub Releases 下载 `Locastra_0.9.0_x64-setup.exe`。安装包内置 Vulkan/CPU 与 NVIDIA CUDA 运行组件，不需要单独安装 Python、Node.js 或 llama.cpp。
+普通用户请前往 [GitHub Releases](https://github.com/Nobel-BY/Locastra/releases) 下载 `Locastra_0.9.0_x64-setup.exe`。安装包内置 Vulkan/CPU 与 NVIDIA CUDA 运行组件，不需要单独安装 Python、Node.js 或 llama.cpp。
 
 > 当前 0.9.0 公开测试版尚未进行商业代码签名，Windows SmartScreen 可能提示“未知发布者”。请核对 Release 页面提供的 SHA-256 后再运行。
 
