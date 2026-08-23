@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Locastra">
+  <rect x="12" y="12" width="232" height="232" rx="54" fill="#151922"/>
+  <path d="M64 128h128M128 64v128M82 82l92 92M174 82l-92 92" stroke="#263142" stroke-width="5"/>
+  <circle cx="72" cy="128" r="14" fill="#2155D9"/>
+  <circle cx="128" cy="72" r="14" fill="#4B7CFF"/>
+  <circle cx="184" cy="128" r="14" fill="#2155D9"/>
+  <circle cx="128" cy="184" r="14" fill="#4B7CFF"/>
+  <path d="M128 96l8.5 23.5L160 128l-23.5 8.5L128 160l-8.5-23.5L96 128l23.5-8.5L128 96Z" fill="#fff"/>
+  <circle cx="128" cy="128" r="6" fill="#151922"/>
+</svg>

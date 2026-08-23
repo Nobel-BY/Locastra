@@ -1,0 +1,302 @@
+/* Locastra Lunar White — a composed light counterpart to Obsidian Intelligence. */
+html[data-theme="light"] {
+  --ink: #131b2e;
+  --muted: #5a6877;
+  --line: rgba(82, 101, 124, .16);
+  --line-strong: rgba(67, 87, 111, .28);
+  --panel: #ffffff;
+  --panel-soft: #f4f6fc;
+  --panel-high: #e9eefb;
+  --canvas: #f8f9fd;
+  --canvas-low: #eef2f8;
+  --accent: #006a64;
+  --accent2: #008d85;
+  --accent-ink: #ffffff;
+  --green: #006a64;
+  --orange: #915b00;
+  --red: #ba1a1a;
+  --sidebar: rgba(250, 251, 255, .94);
+  --sidebar-raised: rgba(0, 106, 100, .085);
+  --shadow-key: 0 18px 42px rgba(42, 54, 82, .12);
+  --shadow-ambient: 0 26px 60px -42px rgba(53, 68, 103, .32);
+  color: var(--ink);
+  color-scheme: light;
+  background: var(--canvas);
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] #root,
+html[data-theme="light"] .desktop-root,
+html[data-theme="light"] .app-shell,
+html[data-theme="light"] .main-panel,
+html[data-theme="light"] .chat-page { color: var(--ink); background: var(--canvas); }
+
+html[data-theme="light"] body::before {
+  background:
+    radial-gradient(circle at 76% -10%, rgba(60, 220, 209, .12), transparent 31rem),
+    radial-gradient(circle at 12% 88%, rgba(183, 198, 239, .2), transparent 34rem);
+  opacity: 1;
+}
+
+html[data-theme="light"] * { scrollbar-color: rgba(75, 93, 117, .25) transparent; }
+html[data-theme="light"] ::selection { color: #ffffff; background: #006a64; }
+
+html[data-theme="light"] .desktop-titlebar {
+  color: #5e6b79;
+  background: rgba(249, 251, 255, .96);
+  border-color: var(--line);
+}
+html[data-theme="light"] .titlebar-brand strong { color: #172033; }
+html[data-theme="light"] .titlebar-brand span { color: #657483; }
+html[data-theme="light"] .window-controls button { color: #526172; }
+html[data-theme="light"] .window-controls button:hover { color: #111827; background: rgba(28, 43, 64, .07); }
+html[data-theme="light"] .window-controls button:active:not(:disabled) { background: rgba(28, 43, 64, .11); }
+html[data-theme="light"] .window-controls .window-close:hover { color: #fff; background: #c42b1c; }
+html[data-theme="light"] .window-maximize-icon.restore::after { background: #f9fbff; }
+
+html[data-theme="light"] .sidebar {
+  color: var(--ink);
+  background: var(--sidebar);
+  border-color: var(--line);
+  box-shadow: 24px 0 60px -48px rgba(42, 54, 82, .28);
+}
+html[data-theme="light"] .brand strong { color: #131b2e; }
+html[data-theme="light"] .brand span,
+html[data-theme="light"] .brand-subtitle { color: #697787; }
+html[data-theme="light"] .new-chat,
+html[data-theme="light"] .primary,
+html[data-theme="light"] .model-search button,
+html[data-theme="light"] .send-button,
+html[data-theme="light"] .stop-send {
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 10px 26px rgba(0, 106, 100, .14);
+}
+html[data-theme="light"] .new-chat:hover,
+html[data-theme="light"] .primary:hover,
+html[data-theme="light"] .model-search button:hover { color: #fff; background: #005d58; box-shadow: 0 13px 30px rgba(0, 106, 100, .18); }
+html[data-theme="light"] .main-nav button,
+html[data-theme="light"] .settings,
+html[data-theme="light"] .history button { color: #657383; }
+html[data-theme="light"] .main-nav button:hover,
+html[data-theme="light"] .settings:hover,
+html[data-theme="light"] .history button:hover { color: #172033; background: rgba(38, 57, 82, .055); }
+html[data-theme="light"] .main-nav button.active,
+html[data-theme="light"] .settings.active { color: #005d58; background: #dff5f2; box-shadow: inset 0 0 0 1px rgba(0, 106, 100, .08); }
+html[data-theme="light"] .main-nav button.active::before,
+html[data-theme="light"] .settings.active::before { background: #008d85; box-shadow: 0 0 12px rgba(0, 141, 133, .3); }
+html[data-theme="light"] .history-search,
+html[data-theme="light"] .history-filters select,
+html[data-theme="light"] .runtime-pill { color: var(--ink); background: rgba(255, 255, 255, .72); border-color: var(--line); }
+html[data-theme="light"] .history-search input { color: var(--ink) !important; }
+html[data-theme="light"] .history-search input::placeholder { color: #718091; }
+html[data-theme="light"] .conversation-menu { color: var(--ink); background: rgba(255, 255, 255, .97); border-color: var(--line-strong); box-shadow: var(--shadow-key); }
+html[data-theme="light"] .history .conversation-menu button,
+html[data-theme="light"] .conversation-menu label { color: #354354; }
+html[data-theme="light"] .conversation-menu button:hover,
+html[data-theme="light"] .conversation-menu label:hover { color: #111827; background: #eef3f8; }
+html[data-theme="light"] .sidebar-bottom { border-color: var(--line); }
+html[data-theme="light"] .runtime-pill strong { color: var(--ink); }
+html[data-theme="light"] .runtime-pill span { color: #697787; }
+
+html[data-theme="light"] .studio-topbar,
+html[data-theme="light"] .chat-header {
+  color: var(--ink);
+  background: rgba(250, 251, 255, .8);
+  border-color: var(--line);
+  box-shadow: 0 8px 34px rgba(52, 66, 96, .055);
+  backdrop-filter: blur(24px);
+}
+html[data-theme="light"] .studio-location > span { color: #647383; }
+html[data-theme="light"] .studio-location > i { color: #9aa7b6; }
+html[data-theme="light"] .studio-location > strong,
+html[data-theme="light"] .eyebrow { color: #006a64; }
+html[data-theme="light"] .studio-location > small { color: #1d2939; }
+html[data-theme="light"] .studio-telemetry > span,
+html[data-theme="light"] .hardware-mini { color: #5b6878; background: rgba(255, 255, 255, .7); border-color: var(--line); }
+
+html[data-theme="light"] .hardware-mini,
+html[data-theme="light"] .model-card,
+html[data-theme="light"] .modal,
+html[data-theme="light"] .download-list article,
+html[data-theme="light"] .library-list article,
+html[data-theme="light"] .document-list article,
+html[data-theme="light"] .settings-card,
+html[data-theme="light"] .assistant-grid article,
+html[data-theme="light"] .compare-setup,
+html[data-theme="light"] .compare-results article,
+html[data-theme="light"] .mcp-server-list > article,
+html[data-theme="light"] .composer,
+html[data-theme="light"] .chat-settings-panel,
+html[data-theme="light"] .file-list > button {
+  color: var(--ink);
+  background: rgba(255, 255, 255, .82);
+  border-color: var(--line);
+  box-shadow: 0 14px 38px rgba(48, 62, 93, .07);
+  backdrop-filter: blur(24px);
+}
+html[data-theme="light"] .model-card:hover { border-color: rgba(0, 106, 100, .3); box-shadow: 0 20px 44px rgba(48, 62, 93, .1); }
+html[data-theme="light"] .model-card.featured { border-color: rgba(0, 106, 100, .44); box-shadow: 0 18px 42px rgba(0, 106, 100, .09); }
+html[data-theme="light"] .best-label { color: #fff; background: #006a64; }
+html[data-theme="light"] .model-avatar,
+html[data-theme="light"] .download-icon,
+html[data-theme="light"] .empty-state > div,
+html[data-theme="light"] .info-row > span,
+html[data-theme="light"] .document-type,
+html[data-theme="light"] .assistant-icon,
+html[data-theme="light"] .mcp-icon { color: #006a64; background: #e0f5f2; border-color: rgba(0, 106, 100, .12); }
+html[data-theme="light"] .tag-row span,
+html[data-theme="light"] .fit-badge.neutral { color: #536273; background: #eef2f7; }
+html[data-theme="light"] .model-stats,
+html[data-theme="light"] .message-content details { color: #596879; background: #f4f6fb; border-color: var(--line); }
+html[data-theme="light"] .model-footer button { color: #006a64; }
+
+html[data-theme="light"] .search-panel { background: rgba(238, 243, 250, .78); border-color: var(--line); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .88); }
+html[data-theme="light"] .source-tabs { border-color: var(--line); }
+html[data-theme="light"] .source-tabs button { color: #647283; }
+html[data-theme="light"] .source-tabs button.active { color: #006a64; border-color: #008d85; }
+html[data-theme="light"] .model-search,
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select {
+  color: var(--ink) !important;
+  background: rgba(255, 255, 255, .92) !important;
+  border-color: var(--line-strong) !important;
+}
+html[data-theme="light"] .model-search { box-shadow: 0 8px 24px rgba(48, 62, 93, .06); }
+html[data-theme="light"] .model-search input { background: transparent !important; border-color: transparent !important; }
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder { color: #758396; }
+html[data-theme="light"] .quick-terms button,
+html[data-theme="light"] .secondary,
+html[data-theme="light"] .icon-button,
+html[data-theme="light"] .filter-button,
+html[data-theme="light"] .library-icon,
+html[data-theme="light"] .path-input button,
+html[data-theme="light"] .task-actions button,
+html[data-theme="light"] .danger-icon,
+html[data-theme="light"] .chat-settings-panel > div:first-child button {
+  color: #354354;
+  background: rgba(255, 255, 255, .78);
+  border-color: var(--line-strong);
+}
+html[data-theme="light"] .secondary:hover,
+html[data-theme="light"] .icon-button:hover,
+html[data-theme="light"] .filter-button:hover { color: #006a64; border-color: rgba(0, 106, 100, .4); background: #edf9f7; }
+
+html[data-theme="light"] .chat-page { background: transparent; }
+html[data-theme="light"] .messages-area { color: var(--ink); }
+html[data-theme="light"] .message.user .message-content { color: #172033; background: #edf3f7; border-color: #dce5ec; }
+html[data-theme="light"] .message-avatar { color: #006a64; background: #def4f1; }
+html[data-theme="light"] .message.user .message-avatar { color: #fff; background: #273449; }
+html[data-theme="light"] .message-actions button,
+html[data-theme="light"] .chat-header button { color: #617082; }
+html[data-theme="light"] .composer-wrap { background: linear-gradient(transparent, var(--canvas) 34%); }
+html[data-theme="light"] .composer { background: rgba(255, 255, 255, .9); border-color: rgba(84, 103, 126, .22); box-shadow: 0 18px 48px rgba(48, 62, 93, .11); }
+html[data-theme="light"] .composer-tool { color: #5d6c7d; }
+html[data-theme="light"] .composer-tool:hover { color: #006a64; background: #edf9f7; border-color: rgba(0, 106, 100, .2); }
+html[data-theme="light"] .composer-shortcut,
+html[data-theme="light"] .context-meter { color: #687789 !important; }
+html[data-theme="light"] .context-meter > i { background: #dfe5ee; }
+html[data-theme="light"] .context-summary-card { background: rgba(255, 255, 255, .88); border-color: rgba(0, 119, 111, .2); box-shadow: 0 14px 34px rgba(45, 61, 88, .08); }
+html[data-theme="light"] .context-summary-card > summary { color: var(--ink); }
+html[data-theme="light"] .context-summary-card > summary small,
+html[data-theme="light"] .context-summary-card > p { color: #687789; }
+html[data-theme="light"] .context-summary-card > textarea { background: #f8fafc; color: var(--ink); }
+html[data-theme="light"] .chat-settings-panel { box-shadow: -16px 0 44px rgba(48, 62, 93, .12); }
+
+html[data-theme="light"] .settings-card p,
+html[data-theme="light"] .settings-card label small,
+html[data-theme="light"] .settings-card > p { color: var(--muted); }
+html[data-theme="light"] .workspace-tabs { background: #eef2f7; border-color: var(--line); }
+html[data-theme="light"] .workspace-tabs button { color: #5f6d7d; }
+html[data-theme="light"] .workspace-tabs button.active,
+html[data-theme="light"] .compare-models label.selected,
+html[data-theme="light"] .compare-results article.active { color: #005d58; background: #e0f5f2; border-color: rgba(0, 106, 100, .36); }
+html[data-theme="light"] .assistant-grid footer,
+html[data-theme="light"] .mcp-tools,
+html[data-theme="light"] .compare-results article > header,
+html[data-theme="light"] .compare-results article > footer { border-color: var(--line); }
+html[data-theme="light"] .mcp-output { color: #e8efed; background: #111a1c; border-color: #26383a; }
+html[data-theme="light"] .mcp-output header { background: #192426; }
+
+html[data-theme="light"] .modal-backdrop { background: rgba(41, 52, 76, .28); }
+html[data-theme="light"] .modal-close { color: #435164; background: #eef2f7; }
+html[data-theme="light"] .file-list > button:hover,
+html[data-theme="light"] .file-list > button.selected { color: var(--ink); background: #eef9f7; border-color: rgba(0, 106, 100, .38); }
+html[data-theme="light"] .toast { color: #eef3f6; background: rgba(29, 39, 56, .96); border-color: rgba(255, 255, 255, .12); box-shadow: 0 20px 48px rgba(43, 54, 80, .22); }
+
+html[data-theme="light"] .onboarding { color: var(--ink); background: var(--canvas); }
+html[data-theme="light"] .onboarding::before { background: radial-gradient(circle at 72% 44%, rgba(60, 220, 209, .16), transparent 28rem); }
+html[data-theme="light"] .onboarding > section { background: rgba(250, 251, 255, .82); }
+html[data-theme="light"] .onboarding > aside { background: #eef2f8; border-color: var(--line); }
+html[data-theme="light"] .onboard-brand strong,
+html[data-theme="light"] .onboarding h1 { color: var(--ink); }
+html[data-theme="light"] .onboard-brand small { color: var(--muted); }
+html[data-theme="light"] .floating-chip { color: #006a64; background: rgba(255, 255, 255, .8); border-color: rgba(0, 106, 100, .18); box-shadow: 0 16px 38px rgba(48, 62, 93, .1); }
+html[data-theme="light"] .orbit { border-color: rgba(0, 106, 100, .14); }
+
+.theme-setting {
+  min-height: 102px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-top: 1px solid var(--line);
+}
+.theme-setting > div:first-child { display: flex; flex-direction: column; }
+.theme-setting > div:first-child strong { color: var(--ink); font-size: 11px; }
+.theme-setting > div:first-child small { margin-top: 4px; color: var(--muted); font-size: 9px; }
+.theme-choice { display: grid; grid-template-columns: repeat(2, minmax(145px, 1fr)); gap: 8px; }
+.theme-choice button {
+  min-width: 145px;
+  height: 62px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+  color: var(--muted);
+  background: rgba(127, 145, 160, .055);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  cursor: pointer;
+}
+.theme-choice button > span { min-width: 0; flex: 1; display: flex; flex-direction: column; }
+.theme-choice button strong { color: var(--ink); font-size: 10px; }
+.theme-choice button small { margin-top: 2px; color: var(--muted); font-family: var(--font-tech); font-size: 8px; }
+.theme-choice button.active { color: var(--accent); background: rgba(0, 106, 100, .075); border-color: rgba(0, 106, 100, .38); box-shadow: 0 9px 24px rgba(0, 106, 100, .075); }
+html[data-theme="dark"] .theme-choice button.active { background: rgba(98, 249, 237, .08); border-color: rgba(98, 249, 237, .36); box-shadow: 0 9px 24px rgba(0, 0, 0, .14); }
+
+.settings-card input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  min-width: 40px;
+  height: 22px;
+  min-height: 22px;
+  padding: 0;
+  appearance: none;
+  border: 1px solid var(--line-strong) !important;
+  border-radius: 999px !important;
+  background: rgba(113, 128, 145, .18) !important;
+  cursor: pointer;
+}
+.settings-card input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(31, 42, 61, .2);
+  transition: transform 180ms var(--ease-premium);
+}
+.settings-card input[type="checkbox"]:checked { border-color: var(--accent) !important; background: var(--accent) !important; }
+.settings-card input[type="checkbox"]:checked::after { transform: translateX(18px); }
+
+@media (max-width: 1080px) {
+  .theme-setting { align-items: stretch; flex-direction: column; gap: 12px; }
+}

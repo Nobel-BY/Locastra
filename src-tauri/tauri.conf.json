@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Locastra",
+  "version": "0.9.0",
+  "identifier": "com.localdeploy.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Locastra · 本地智聊",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 920,
+        "minHeight": 620,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "shadow": true,
+        "backgroundColor": "#0E1514",
+        "devtools": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src ipc: http://ipc.localhost https://modelscope.cn https://www.modelscope.cn https://huggingface.co https://hf-mirror.com https://*.hf.co http://127.0.0.1:*"
+    }
+  },
+  "bundle": {
+    "active": false,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "resources": ["binaries"],
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "installMode": "currentUser",
+        "languages": ["SimpChinese", "English"],
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}

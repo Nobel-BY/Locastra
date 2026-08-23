@@ -1,0 +1,9 @@
+{
+  "build": {
+    "beforeBuildCommand": ""
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"]
+  }
+}

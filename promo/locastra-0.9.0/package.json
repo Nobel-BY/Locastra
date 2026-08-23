@@ -1,0 +1,22 @@
+{
+  "name": "locastra-0.9.0-promo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:bilibili": "remotion render src/index.ts LocastraBilibili out/locastra-0.9.0-bilibili-1080p.mp4",
+    "render:douyin": "remotion render src/index.ts LocastraDouyin out/locastra-0.9.0-douyin-1080x1920.mp4",
+    "render:all": "npm run render:bilibili && npm run render:douyin",
+    "still": "remotion still src/index.ts LocastraBilibili"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

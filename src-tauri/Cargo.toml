@@ -1,0 +1,56 @@
+[package]
+name = "localdeploy"
+version = "0.9.0"
+description = "面向 Windows 的简单本地 AI 模型管理与聊天应用"
+authors = ["LocalDeploy Contributors"]
+edition = "2021"
+
+[lib]
+name = "localdeploy_lib"
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[features]
+default = ["desktop"]
+desktop = ["dep:tauri", "dep:tauri-plugin-dialog", "tauri/tray-icon"]
+
+[dependencies]
+tauri = { version = "2", features = [], optional = true }
+tauri-plugin-dialog = { version = "2", optional = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["process", "time", "sync", "fs", "io-util", "macros", "rt-multi-thread"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls", "socks", "http2", "system-proxy"] }
+futures-util = "0.3"
+sysinfo = "0.33"
+fs2 = "0.4"
+rusqlite = { version = "0.32", features = ["bundled"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+regex = "1"
+urlencoding = "2"
+thiserror = "2"
+parking_lot = "0.12"
+dirs = "6"
+base64 = "0.22"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+pdf-extract = "0.7"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Security", "Win32_System_JobObjects", "Win32_System_Threading"] }
+webview2-com = "0.38"
+windows = "0.61"
+
+[dev-dependencies]
+tempfile = "3"
+wiremock = "0.6"
+
+[profile.release]
+strip = true
+lto = "thin"
+codegen-units = 1
+panic = "abort"
