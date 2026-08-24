@@ -14,6 +14,8 @@ ibm/
 smoke-tests/
 promo/**/out/
 promo/**/.remotion/
+promo/**/.pydeps/
+promo/**/analysis/render-audio.wav
 *.log
 .vite*
 .ui-*

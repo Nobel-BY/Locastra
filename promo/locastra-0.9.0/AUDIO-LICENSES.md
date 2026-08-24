@@ -4,8 +4,8 @@ Locastra 0.9.0 宣传片没有人声。音乐与音效均来自 Mixkit，并按 
 
 ## 背景音乐
 
-- House Vibez — Lily J
-- 来源：<https://assets.mixkit.co/music/745/745.mp3>
+- Cat Walk — Arulo
+- 来源：<https://assets.mixkit.co/music/371/371.mp3>
 - 许可：Mixkit Stock Music Free License
 
 ## 音效
