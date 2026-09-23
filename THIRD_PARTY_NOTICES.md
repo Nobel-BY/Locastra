@@ -21,4 +21,6 @@ The optional NVIDIA build contains CUDA runtime and cuBLAS redistributable binar
 
 Locastra uses open-source dependencies listed in `package.json`, `pnpm-lock.yaml`, `src-tauri/Cargo.toml`, and `src-tauri/Cargo.lock`. Each dependency remains subject to its own license. Binary distributions must preserve all notices required by those licenses.
 
+The Windows package includes Microsoft's x64 `WebView2Loader.dll` supplied by the `webview2-com-sys` crate so GNU-target builds can locate the WebView2 loader beside the application executable. Microsoft WebView2 components remain subject to Microsoft's applicable license terms.
+
 Locastra is not affiliated with or endorsed by ModelScope, Hugging Face, NVIDIA, Microsoft, or the llama.cpp project.
